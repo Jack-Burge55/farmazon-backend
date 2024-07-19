@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @RestController
 @CrossOrigin("*")
@@ -35,13 +34,10 @@ public class ProductLineController {
   public ProductLine post(@RequestBody ProductLineBody productLineBody, @PathVariable Integer productId){
     Integer userId = productLineBody.getUserId();
     Integer quantity = productLineBody.getQuantity();
-    String newProductLineName = productLineBody.getName();
 
     User tempUser = userService.getUserById(userId);
     Product tempProduct = productService.getProductById(productId);
     Cart tempCart = tempUser.getCart();
-
-    String productName = tempProduct.getName();
 
     List<ProductLine> productLines = productLineService.getProductLines();
 

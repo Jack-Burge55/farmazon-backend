@@ -14,7 +14,7 @@ public class ProductLineService {
     ProductLineRepo productLineRepo;
 
     public List<ProductLine> getProductLines() {
-        return (List) productLineRepo.findAll();
+        return (List<ProductLine>) productLineRepo.findAll();
     }
 
 

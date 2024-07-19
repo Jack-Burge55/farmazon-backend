@@ -2,7 +2,6 @@ package com.farmers.farmazon;
 
 import com.farmers.farmazon.Models.Cart;
 import com.farmers.farmazon.Models.Product;
-import com.farmers.farmazon.Models.ProductLine;
 import com.farmers.farmazon.Models.User;
 import com.farmers.farmazon.Repos.CartRepo;
 import com.farmers.farmazon.Repos.ProductLineRepo;
@@ -12,8 +11,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-
-import java.util.List;
 
 @SpringBootApplication
 public class FarmazonApplication {
